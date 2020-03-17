@@ -1,0 +1,88 @@
+package pessoa;
+
+public class Pessoa { //Apresentando atributos
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String email;
+	private String cpf;
+	
+	public Pessoa (String nome, String endereco, String telefone, String email, String cpf){
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+		this.email = email;
+		this.cpf = cpf;
+	}
+	public String getNome(){
+		return nome;
+	}
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	public String getEndereco(){
+		return endereco;
+	}
+	public void setEndereco(String endereco){
+		this.endereco = endereco;
+	}
+	public String getTelefone(){
+		return telefone;
+	}
+	public void setTelefone(String Telefone){
+		this.telefone = telefone;
+	}
+	public String getEmail(){
+		return email;
+	}
+	public void setEmail (String email){
+		this.email = email;
+	}
+	public String getCpf(){
+		return cpf;
+	}
+	public void setCpf(){
+		this.cpf = cpf;
+	}
+	public void apresentarPessoa(){
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Endereco: " + this.getEndereco());
+		System.out.println("Telefone: " + this.getTelefone());
+		System.out.println("Email: " + this.getEmail());
+		System.out.println("Cpf: " + this.getCpf());
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+package pessoa;
+
+public class Principal {
+	public static void main(String[]args){
+		Pessoa p = new Pessoa("Davi Jesus", "Rua Davi o famoso", "15555555555", "davi_jesus12@outlook.com","312.566.456-37");
+		p.apresentarPessoa();
+
+		//Apresentando dados das pessoas
+		
+		System.out.println("");
+
+		Pessoa a = new Pessoa("João Luiz", "Rua João god", "15555512345", "jaum2003luiz@outlook.com","312.526.456-17");
+		a.apresentarPessoa();
+		
+		System.out.println("");
+		
+		Pessoa b = new Pessoa("Endryl fiorotti", "Rua Jones fez", "155355544", "fiorotti12@outlook.com","356.046.456-02");
+		b.apresentarPessoa();
+		
+		System.out.println("");
+		
+		Pessoa c = new Pessoa("yuri martins", "Rua Jose de araujo", "15555555555", "Martins2003@outlook.com","344.566.455-12");
+		c.apresentarPessoa();
+		
+		System.out.println("");
+		
+		Pessoa d = new Pessoa("Felipe de sales", "Rua jose placido", "15555598765", "Felipes02Sales@outlook.com","333.566.876-16");
+		d.apresentarPessoa();
+	}
+}
+
